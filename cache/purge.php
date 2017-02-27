@@ -4,7 +4,7 @@ function removeDirectory($path) {
         foreach ($files as $file) {
                 is_dir($file) ? removeDirectory($file) : unlink($file);
         }
-        rmdir($path);
+        //rmdir($path);
         return;
 }
 removeDirectory("/run/nginx-cache/");
