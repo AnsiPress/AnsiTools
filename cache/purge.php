@@ -8,4 +8,5 @@ function removeDirectory($path) {
         return;
 }
 removeDirectory("/run/nginx-cache/");
+removeDirectory("/run/ngx_pagespeed_cache/");
 ?>
